@@ -1,0 +1,118 @@
+/* Begin reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+/* End reset */
+
+/* utility class */
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+
+/* End utility classes */
+
+body{
+    font-family: "Nunito",sans-serif;
+    min-height: 100vh;
+    background-color: aliceblue;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI4A1TdQdjkSOilf3cP_PyBJz4PEhKFov9LA&usqp=CAU"), 
+    linear-gradient(to  left, steelblue ,purple,#fff);
+    background-position: right;
+   
+   
+    background-repeat: repeat-y right center url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI4A1TdQdjkSOilf3cP_PyBJz4PEhKFov9LA&usqp=CAU")
+    no-repeat linear-gradient(to  left, steelblue ,purple,#fff);
+    background-size: 20%,auto; 
+
+}
+
+.ex{
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 2px solid black;
+}
+
+.ex img{
+    width: 25%;
+    height: auto;
+}
+
+
+
+.pro{
+   width:35%;
+}
+
+.pro img{
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    border: 5px double gray;
+    border-radius: 50%;
+}
+
+.hero{
+    border-bottom: 2px solid #000;  
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: hsla(0, 0%, 100%, 0.35);
+
+}
+
+.container{
+    background-color: rgb(251, 210, 156);
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXrCrWitq2WMzcrB8CPdiRR0-7sHSHJlDJDw&usqp=CAU');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+}
+
+.h1{
+    font-size: 500%;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px #000;
+    background-color: hsla(0, 43%, 3%, 0.217);
+    padding: 0.25rem;
+    border-radius: 10px;
+
+}
+
+span , .h1{
+    font-size: 300px;
+    background-color: hsla(0, 54%, 3%, 0.217);
+    padding: 0.25rem;
+    border-radius: 10px;
+}
+
+.clip{
+    font-weight: 800;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url("https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821_640.jpg");
+    background-size: 100%;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color: hsla(0,0%,0%,0.196);
+    color: transparent;
+}
+

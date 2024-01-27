@@ -1,0 +1,95 @@
+/* || RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    font: inherit;
+}
+
+/* ||VARIABLE */
+
+:root{
+    /* COLORS */
+    --BGCOLOR:whitesmoke;
+    --COLOR:#000;
+    --HEADER-BGCOLOR:#333;
+    --HEAD-COLOR:whitesmoke;
+}
+
+/* || UTILITY CLASSES */
+
+.underline{
+    text-decoration: underline;
+}
+
+/* || GENERAL STYLES */
+
+html{   
+    font-size: 2.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+   
+    
+    }
+
+/* || BLOCKS */
+
+/* || aka components */
+
+.btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    display: grid;
+    place-content: center;
+    
+    
+}
+
+/* || MODIFIERS */
+/* incremental style changes */
+
+/* Blocks with modifiers */
+
+.header__btn--secondary{
+       background-color: yellow;
+}   
+
+.header__btn--lean{
+       transform: skewX(-10deg);
+}   
+.header__btn--border-lg{
+    border:5px solid whitesmoke;
+     
+}
+
+section{
+    text-align: center;
+}
+
+.header{
+    background-color: var(--HEADER-BGCOLOR);
+    color: var(--HEAD-COLOR);
+    padding: 1rem 1rem 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 60px;
+}
+
+.header__btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
